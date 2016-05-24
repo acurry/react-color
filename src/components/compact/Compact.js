@@ -8,7 +8,6 @@ import shallowCompare from 'react-addons-shallow-compare'
 import { Raised } from '../../../modules/react-material-design'
 import { ColorWrap } from '../common'
 import CompactColor from './CompactColor'
-import CompactFields from './CompactFields'
 
 export class Compact extends ReactCSS.Component {
   shouldComponentUpdate = shallowCompare.bind(this, this, arguments[0], arguments[1])
@@ -61,7 +60,6 @@ export class Compact extends ReactCSS.Component {
             { colors }
             <div is="clear" />
           </div>
-          <CompactFields {...this.props} onChange={ this.handleChange } />
         </div>
       </Raised>
     )
